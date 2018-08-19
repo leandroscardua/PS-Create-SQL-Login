@@ -10,3 +10,5 @@ $login.PasswordExpirationEnabled = $false
 $login.PasswordPolicyEnforced = $false
 $login.Create($password)
 $login.AddToRole("dbcreator")
+
+Write-Host "Login: $login , Senha: $password , Servidor SQL: $sqlserver"
